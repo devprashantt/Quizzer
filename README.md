@@ -11,6 +11,6 @@ The main objective is to create an educational app that quizzes a user about the
 
 Screenshots
 
-![WhatsApp Image 2022-03-11 at 11 38 07 PM](https://user-images.githubusercontent.com/96608616/157927561-d0c16697-21d8-4c15-aba1-251c79abd942.jpeg)
+<img src="![WhatsApp Image 2022-03-11 at 11 38 07 PM](https://user-images.githubusercontent.com/96608616/157927561-d0c16697-21d8-4c15-aba1-251c79abd942.jpeg)" width="100" height="200">
 
 
