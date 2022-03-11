@@ -1,16 +1,16 @@
-# my_project7
+Flutter project
 
-A new Flutter project.
+Quiz
 
-## Getting Started
+Android quiz application that tests your General Knowledege.There are a total of 15 questions,Each question will appear in center of screen, Corresponding option are provided
+at bottom of screen in True or False Type. Once the user clicks on the option, user's answer will be shown below in tick if user was correct or cross form if user's selected option was wrong cannot be altered.
 
-This project is a starting point for a Flutter application.
+Objective
 
-A few resources to get you started if this is your first Flutter project:
+The main objective is to create an educational app that quizzes a user about their General Knowledge.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
