@@ -12,5 +12,6 @@ The main objective is to create an educational app that quizzes a user about the
 Screenshots
 
 <img src="1.jpeg" width="100" height="200">
+<img src="2.jpeg" width="100" height="200">
 
 
