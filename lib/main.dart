@@ -6,16 +6,18 @@ import 'quiz_brain.dart';
 QuizBrain quizBrain = QuizBrain();
 
 void main() {
-  runApp(Quizzler());
+  runApp(const Quizzler());
 }
 
 class Quizzler extends StatelessWidget {
+  const Quizzler({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.grey.shade900,
-        body: SafeArea(
+        body: const SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
             child: QuizPage(),
@@ -27,6 +29,8 @@ class Quizzler extends StatelessWidget {
 }
 
 class QuizPage extends StatefulWidget {
+  const QuizPage({Key? key}) : super(key: key);
+
   @override
   _QuizPageState createState() => _QuizPageState();
 }
@@ -48,7 +52,6 @@ class _QuizPageState extends State<QuizPage> {
 
         //Modified for our purposes:
 
-
         //TODO Step 4 Part C - reset the questionNumber,
         quizBrain.reset();
 
@@ -59,12 +62,12 @@ class _QuizPageState extends State<QuizPage> {
       //TODO: Step 6 - If we've not reached the end, ELSE do the answer checking steps below 👇
       else {
         if (userPickedAnswer == correctAnswer) {
-          scoreKeeper.add(Icon(
+          scoreKeeper.add(const Icon(
             Icons.check,
             color: Colors.green,
           ));
         } else {
-          scoreKeeper.add(Icon(
+          scoreKeeper.add(const Icon(
             Icons.close,
             color: Colors.red,
           ));
@@ -83,12 +86,12 @@ class _QuizPageState extends State<QuizPage> {
         Expanded(
           flex: 5,
           child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Center(
               child: Text(
                 quizBrain.getQuestionText(),
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 25.0,
                   color: Colors.white,
                 ),
@@ -98,11 +101,12 @@ class _QuizPageState extends State<QuizPage> {
         ),
         Expanded(
           child: Padding(
-            padding: EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(15.0),
+            // TODO: Replace `FlatButton` with `TextButton`
             child: FlatButton(
               textColor: Colors.white,
               color: Colors.green,
-              child: Text(
+              child: const Text(
                 'True',
                 style: TextStyle(
                   color: Colors.white,
@@ -118,10 +122,11 @@ class _QuizPageState extends State<QuizPage> {
         ),
         Expanded(
           child: Padding(
-            padding: EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(15.0),
+            // TODO: Replace `FlatButton` with `TextButton`
             child: FlatButton(
               color: Colors.red,
-              child: Text(
+              child: const Text(
                 'False',
                 style: TextStyle(
                   fontSize: 20.0,
